@@ -2,7 +2,7 @@ package c1.syntax_and_structure.m3.decision_structures;
 
 import java.util.Scanner;
 
-public class Fall_Through_switch {
+public class Fall_Through_switch_statement {
     public static void main(String[] args) {
         //Fall-Through in Switch Statements
         //Grade Message
