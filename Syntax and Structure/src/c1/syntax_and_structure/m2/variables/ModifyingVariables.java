@@ -16,9 +16,9 @@ public class ModifyingVariables {
         //2. Get the hourly pay rate
         double payRate = 0;
         System.out.println("What is your pay rate?");
-        payRate = scanner.nextDouble();
+        payRate = scanner.nextDouble();  //choose the one that match the data type expected
 
-        scanner.close(); // Closing the scanner
+        scanner.close(); // closing scanner so it doesn't waste memory, we don't need to read more input
 
         //3. Multiply hours and pay rate
         double grossPay = hours * payRate;
