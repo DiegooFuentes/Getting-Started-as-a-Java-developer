@@ -15,22 +15,43 @@ public class ChangeForADollarGame {
 
         System.out.println("Welcome to 'Change for a Dollar'! Your goal is to enter enough change " +
                 "to make exactly $1.00 with at least one of each type of coin");
+        double penny = .01;
+        double nickel = .05;
+        double dime = .10;
+        double quarter = .25;
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter your number of pennies:");
-        double pennies = scanner.nextDouble();
+        double count = scanner.nextDouble();
+        penny  = penny * count;
 
         System.out.println("Enter your number of nickels:");
-        double nickels = scanner.nextDouble();
+        double count2 = scanner.nextDouble();
+        nickel = nickel * count2;
 
         System.out.println("Enter your number of dimes:");
-        double dimes = scanner.nextDouble();
+        double count3 = scanner.nextDouble();
+        dime = dime * count3;
 
         System.out.println("Enter your number of quarters:");
-        double quarters = scanner.nextDouble();
+        double count4 = scanner.nextDouble();
+        quarter = quarter * count4;
 
-        double total = pennies + nickels + dimes + quarters;
+        double total = penny + nickel + dime + quarter;
 
         System.out.println("Your total is $" + total);
+
+        if(total == 1){
+            System.out.println("You got it right!");
+
+        } else if (total < 1) {
+            System.out.println("You need " + (1 - total) + " to get 1 dollar");
+
+        }else{
+            System.out.println("You pass by " + (total - 1) + " to get 1 dollar");
+        }
+
+
+
     }
 }
