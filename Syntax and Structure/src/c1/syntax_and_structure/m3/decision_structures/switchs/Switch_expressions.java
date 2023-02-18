@@ -1,4 +1,4 @@
-package c1.syntax_and_structure.m3.decision_structures;
+package c1.syntax_and_structure.m3.decision_structures.switchs;
 
 import java.util.Scanner;
 
