@@ -13,7 +13,7 @@ public class Do_while_loop {
 
         Scanner scanner = new Scanner(System.in);
 
-        int runAgain = 0;
+        int runAgain = 0; //contador
 
         do{
             System.out.println("Enter the first number:");
@@ -23,12 +23,15 @@ public class Do_while_loop {
             double number2 = scanner.nextDouble();
 
             double sum = number1 + number2;
-            System.out.println("The sum us " + sum);
+            System.out.println("The sum is " + sum);
 
             System.out.println("Would you like to start over? Enter 1 for yes, 2 for no.");
             runAgain = scanner.nextInt();
 
-        }while(runAgain == 1);
+        }while(runAgain == 1); //This asks if the condition should run again
+
+        //Do while loops executes at least once
+        //do while loops are rarely used, because while loop most times will cover your needs
 
         scanner.close();
     }
