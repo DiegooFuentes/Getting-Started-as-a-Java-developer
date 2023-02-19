@@ -16,12 +16,18 @@ public class While_loop {
         Scanner scanner = new Scanner(System.in);
         double hoursWorked = scanner.nextDouble();
 
-        //Validate input
+        //Validate input, the program is not allow to accept overtime
         while(hoursWorked > maxHours){
 
-            System.out.println("Invalid entry. Your hours must be between q and 40. Try again.");
+            System.out.println("Invalid entry. Your hours must be between 1 and 40. Try again.");
             hoursWorked = scanner.nextDouble(); //Contador
-        }
+        } //This will loop until the user enter a valid input in the hoursWorked scanner
+
+        /*
+        +*If your using variables within a condition of your loop, It's essential that the value of at least one
+        +*of those variables has the possibility of being updated within the loop, therefore it could result
+        **of the condition being always true, ending up in an infinite loop
+        **/
 
         scanner.close();
 
