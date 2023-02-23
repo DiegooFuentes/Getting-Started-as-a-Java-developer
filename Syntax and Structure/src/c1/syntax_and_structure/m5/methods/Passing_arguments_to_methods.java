@@ -22,6 +22,7 @@ public class Passing_arguments_to_methods {
 
         isUserQualified(creditScore,salary);
         //Check if the user is qualified
+
     }
 
     public static void isUserQualified(int creditScore,double salary){
