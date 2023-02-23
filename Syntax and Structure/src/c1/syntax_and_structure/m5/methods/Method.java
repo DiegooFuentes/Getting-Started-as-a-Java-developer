@@ -12,6 +12,7 @@ public class Method {
         greetUser();
     }
 
+
     public static void greetUser(){
         System.out.print("Enter your name: ");
         Scanner scanner = new Scanner(System.in);
