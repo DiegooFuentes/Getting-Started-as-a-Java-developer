@@ -32,7 +32,6 @@ public class Rectangle {
     //constructors
     public Rectangle() {
     }
-
     public Rectangle(double length, double width) {
         this.length = length;
         this.width = width;
