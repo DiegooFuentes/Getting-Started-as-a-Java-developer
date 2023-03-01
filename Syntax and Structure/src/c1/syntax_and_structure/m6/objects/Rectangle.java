@@ -28,5 +28,13 @@ public class Rectangle {
     public void setWidth(double width){
         this.width = width;
     }
-    
+
+    //constructors
+    public Rectangle() {
+    }
+
+    public Rectangle(double length, double width) {
+        this.length = length;
+        this.width = width;
+    }
 }
