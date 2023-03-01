@@ -28,4 +28,5 @@ public class Rectangle {
     public void setWidth(double width){
         this.width = width;
     }
+    
 }
