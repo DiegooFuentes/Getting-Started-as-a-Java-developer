@@ -3,6 +3,7 @@ package c1.syntax_and_structure.m7.text_processing;
 public class TextProcessor {
     public static void main(String[] args) {
         countWord("I love Java");
+        reverseString("stop");
     }
 
     /**
@@ -24,6 +25,8 @@ public class TextProcessor {
 
     // Prints a String in reverse order
     public static void reverseString(String text){
-
+        for(int i = text.length() - 1; i >= 0; i--){
+            System.out.print(text.charAt(i));
+        }
     }
 }
