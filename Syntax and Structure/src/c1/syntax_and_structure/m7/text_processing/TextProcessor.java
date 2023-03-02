@@ -30,10 +30,18 @@ public class TextProcessor {
         }
     }
 
-    // Prints a String in reverse order
+    /**
+    * Prints a String in reverse order
+    * @param text string to reverse
+    * */
     public static void reverseString(String text){
-        for(int i = text.length() - 1; i >= 0; i--){
-            System.out.print(text.charAt(i));
+        for(int i = text.length() - 1; i >=  0; i--){ //.length use the amount of elements, not indices.
+            //text.length - 1 because array indices begin with zero
+            //i >= 0 because when we get to zero we get to the beginning of the word
+            //i-- because we're counting backwards
+
+            System.out.print(text.charAt(i)); //we use charAt, because strings are arrays of characters,
+            // This will return the character at the index specified
         }
     }
 }
