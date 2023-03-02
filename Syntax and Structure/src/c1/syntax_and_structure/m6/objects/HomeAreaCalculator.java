@@ -6,12 +6,12 @@ package c1.syntax_and_structure.m6.objects;
 public class HomeAreaCalculator {
     public static void main(String[] args) {
 
-        Rectangle room1 = new Rectangle();
-        room1.setLength(50);
+        Rectangle room1 = new Rectangle(); // Using constructor with no parameter
+        room1.setLength(50); //Calling setter
         room1.setWidth(25);
-        double areaOfRoom1 = room1.calculateArea();
+        double areaOfRoom1 = room1.calculateArea(); // Calling method
 
-        Rectangle room2 = new Rectangle(30,75);
+        Rectangle room2 = new Rectangle(30,75); //Using constructor with parameters
         double areaOfRoom2 = room2.calculateArea();
 
     }
